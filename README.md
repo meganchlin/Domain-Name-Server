@@ -26,21 +26,26 @@ Implement a service similar to nip.io, resolving any IP address from the domain.
 
 The format of the configuration file is defined as follows.
 
+```plaintext
 <forwardIP>
 <domain 1>,<path of zone file 1>
 <domain 2>,<path of zone file 2>
 ...
+```
 
 ### Zone Files
 
 The format of a zone file containing records of a domain is defined as follows.
 
+```plaintext
 <domain>
 <NAME>,<TTL>,<CLASS>,<TYPE>,<RDATA>
 <NAME>,<TTL>,<CLASS>,<TYPE>,<RDATA>
 ...
+```
 
 The format of <RDATA> for each RR type is summarized below.
+```plaintext
 A : <ADDRESS>
 AAAA : <ADDRESS>
 NS : <NSDNAME>
@@ -48,6 +53,7 @@ CNAME : <CNAME>
 SOA : <MNAME> <RNAME> <SERIAL> <REFRESH> <RETRY> <EXPIRE> <MINIMUM>
 MX : <PREFERENCE> <EXCHANGE>
 TXT : <TXT-DATA>
+```
 
 ### DNS Client
 
