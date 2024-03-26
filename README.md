@@ -61,6 +61,7 @@ Use the `dig` tool for DNS lookups to test the server.
 
 
 ## Usage
-
+```plaintext
 ./dns <port-number> <path/to/the/config/file>
+```
 
